@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+
+body{
+    background-image: url("/static/imgs/fundo\ 1.png");
+    display: grid;
+    justify-items: center;
+}
+.corpo-1{
+    display: grid;
+    justify-items: center   ;
+}
+
+header{
+    margin-top: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    
+    width: 90vw;
+}
+header img{
+    width: 30px;
+}
+
+.logo img{
+    
+    width: 40%;
+    min-width: 200px;
+}
+
+.nav a{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.nav li{
+    font-family: "Italiana";
+    font-size: 1.2rem;
+    color: white;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav-text ul{
+    gap: 20px;
+    background-color: #81867B;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+.nav-icon ul{
+    background-color: rgba(71, 15, 15, 0);
+    display: grid;
+    justify-items: right;
+    padding: 5px;
+    align-items: center;
+}
+
+.loc{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+
+.aprese-1{
+    color: white;
+    background-color: rgba(165, 39, 39, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:60% 70%;
+    justify-content: center;
+    justify-items: center;
+
+    width: 90vw;
+    padding: 10px;
+
+}
+
+.texts{
+    font-family: "Italiana";
+}
+.titulo{
+    padding: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+    background-color: #000000b6;
+    width: 90%;
+    font-size: 3rem;
+}
+.sub-titulo{
+    
+    padding: 5px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+
+    background-color: #000000b6;
+    width: 61%;
+    font-size: 1.5rem;
+
+}
+
+.btn-orcamento{
+    border-radius: 10px;
+    font-size: 2rem;
+    width: 80%;
+    height: 15%;
+    background-color:#81867B;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-orcamento  img{
+    width: 40px;
+
+}
+
+.btn-orcamento span{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+}
+.btn-orcamento a{
+    text-decoration: none;
+}
+.carrocel{
+    display: grid;
+    margin-left: 10%;
+    justify-items: center;
+}
+.carrocel img{
+    width: 65%;
+}
+
+
+
+
+.produtos{
+    background-color: rgba(0, 128, 0, 0);
+    display: grid;
+    justify-items: center;
+}
+.produtos-titulo{
+    font-family: "Italiana";
+    font-size: 3rem;
+}
+
+.produtos-img{
+    display: flex;
+    background-color: #81867b00;
+}
+.sec-produtos-img{
+    display: grid;
+    justify-items: center;
+}
+
+.sec-produtos-img img{
+    width: 90%;
+}
+.sec-produtos-img span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #847650;
+    width: 90%;
+    height: 61px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+#meio{
+    gap: 20px;
+}
+#lado{
+    margin-top: 50px;
+}
+
+.produtos-info {
+    outline: 1px solid;
+    gap: 20px;
+    padding: 25px;
+    background-color: #847650a1;
+    border-radius: 20px;
+    margin-top: 15px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+.esquerda{
+    width: 50%;
+}
+.produtos-info li{
+    font-size: 1.5rem;
+}
+
+.contatos{
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.719);
+    display: grid;
+    justify-items: center;
+    width: 90%;
+}
+.contatos-logo{
+    width: 90%;
+    background-color: #84765000;
+}
+.contatos-titulo {
+    font-family: "Italiana";
+    font-size: 4rem;
+}
+.contatos-sub-titulo {
+    
+    font-family: "Italiana";
+    font-size:2rem;
+    margin-bottom: 20px;
+}
+
+.redes-sociais{
+    background-color: #84765000;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.redes{
+    display: grid;
+    background-color: rgba(0, 0, 0, 0);
+    justify-items: center;
+}
+
+.maps{   
+    margin-top: 20px;
+    background-color: #84765000;
+    border-radius: 20px;
+    width: 40%;
+    height:40%;
+}
+.maps iframe {
+    border-radius: 20px;
+    width: 100%;
+    height: 200%;
+}
+
+footer{
+    display: flex;
+    background-color: #2B2727;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.footer-medias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer-medias img{
+    width: 20px;
+}
+.redes span {
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (max-width: 1099px){
+
+}   
