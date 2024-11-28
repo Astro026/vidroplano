@@ -27,7 +27,9 @@ header{
 header img{
     width: 30px;
 }
-
+.menu-container{
+    display:none;
+}
 .logo img{
     
     width: 40%;
@@ -44,9 +46,19 @@ header img{
     font-size: 1.2rem;
     color: white;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0);
+    
+    transition-delay: 0.2s;
+    transition-property: color;
 }
 
+.nav li:hover,a:hover{
+    text-decoration: underline;
+    transition-delay: 250ms;
+    transition-property: margin-right;
+    color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+}
 .nav-text ul{
     gap: 20px;
     background-color: #81867B;
@@ -77,7 +89,8 @@ header img{
     background-color: rgba(165, 39, 39, 0);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows:60% 70%;
+    grid-template-rows:50% 60%;
+    gap: 30px;
     justify-content: center;
     justify-items: center;
 
@@ -86,7 +99,8 @@ header img{
 
 }
 
-.texts{
+.textos{
+    letter-spacing: 3px;
     font-family: "Italiana";
 }
 .titulo{
@@ -97,7 +111,7 @@ header img{
     border-bottom-right-radius: 10px;
     background-color: #000000b6;
     width: 90%;
-    font-size: 3rem;
+    font-size: 3vw;
 }
 .sub-titulo{
     
@@ -109,21 +123,44 @@ header img{
 
     background-color: #000000b6;
     width: 61%;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
 
 }
 
 .btn-orcamento{
-    border-radius: 10px;
+    
+    text-shadow: 1px 1px 1px #000;
     font-size: 2rem;
     width: 80%;
     height: 15%;
-    background-color:#81867B;
     align-items: center;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.btn-orcamento a{
+    font-family: 'Italiana';
+    width: 100%;
+    display: inline-block; 
+    justify-items: center;
+    padding: 10px 20px; 
+    background-color: #847650;
+    color: white; 
+    text-align: center; 
+    font-size:  2rem; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.btn-orcamento a:hover{
+  
+    transition-delay: 0.2s;
+    transition-property: background;
+    box-shadow: 1px 1px 1px #000;
+    background-color: #756947;
 }
 .btn-orcamento  img{
     width: 40px;
@@ -279,6 +316,220 @@ footer{
 
 
 
-@media screen and (max-width: 1099px){
+@media screen and (max-width: 1000px){
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-items: center;
+        width: 100vw;
+        height: 100%;
+        border: 1px solid rgb(240, 13, 183);
+    }
+    .corpo-1{
+        margin: 0;
+        margin-top: 20px;
+        padding: 0;
+        display: grid;
+        justify-items: center;
+    }
+    header{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        
+        background-color: #00000000;
+    }
+
+    .logo img{
+        width: 250px;
+        background-color: #84765000;
+    }
+    
+    .nav{
+        position: fixed;
+
+    }
+    .nav-icon, .nav-text{display: none;}
+
+
+
+
+
+
+    .menu-container {
+        display: block;
+        position: fixed;
+        background-color: #333;
+        right: 1px;
+      }
+    
+      .menu-toggle {
+        display: none;
+      }
+    
+      .menu-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        cursor: pointer;
+        color: #fff;
+        background-color: #333;
+      }
+    
+      .menu-label span {
+        font-size: 1.2rem;
+      }
+    
+      .menu-label .icon {
+        font-size: 1.5rem;
+      }
+    
+      .menu {
+        display: none;
+        flex-direction: row;
+        background-color: #444;
+      }
+    
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 1rem;
+        border-bottom: 1px solid #555;
+      }
+    
+      .menu a:hover {
+        background-color: #555;
+      }
+    
+      /* Mostrar o menu quando o checkbox estiver marcado */
+      .menu-toggle:checked ~ .menu {
+        display: flex;
+      }
+
+
+
+
+
+
+    .aprese-1{
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color: #81867b00;
+    }
+    .textos {
+        text-align: center;
+        background-color: #00000096;
+        height: 120px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .titulo{
+        font-size: 1.5rem;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .sub-titulo{
+        background-color: rgba(0, 0, 0, 0);
+        font-size: 0.95rem;
+        width: 90%;
+    }
+   .carrocel{
+    margin: 0;
+    margin-bottom: 20px;
+    } 
+    .carrocel img{
+        width: 300px;
+    }
+    .btn-orcamento{
+        
+    margin-bottom: 20px;
+        box-shadow: 1px 1px 1px black;
+        
+    }
+    .btn-orcamento span{
+        font-size: 1.5rem;
+    }
+    
+    .produtos{
+        background-color: #44292900;
+    }
+
+    .produtos-titulo{
+        font-size: 2.3rem;
+    }
+
+    .produtos-img{
+        display: block;
+    }
+    .sec-produtos-img{
+        gap: 20px;
+        width: 300px;
+    }
+    #lado{
+        margin-bottom:  40px;
+    }
+    .produtos-info{
+        width: 300px;
+    }
+    .contatos{
+        display: block;
+        
+    }
+    .contatos-logo {
+        display: flex;
+        justify-items: center;
+        margin-bottom: 10px;
+    }    
+    .contatos-logo img{
+        width: 100%;
+    }
+
+    .contatos-titulo{
+        font-size: 1.2rem;
+    }
+
+    .maps{
+        display: none;
+    }
+    .redes-sociais{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+    .redes img{
+        width: 40px;
+    }
+    footer{
+        
+        display: block;
+        width: 100%;
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    
+    .footer-medias{display: none;}
+    .footer-contatos{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        background: #00000000;
+    }
+    
+
+
+
+
+
+
+
 
 }   
